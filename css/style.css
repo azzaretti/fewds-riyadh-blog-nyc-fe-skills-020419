@@ -5,17 +5,20 @@ html, body {
   min-height: 100%;
 }
 
+
+
 body {
-  background: url(../images/backgrounds/architecture.jpg) center no-repeat;
-  background-size: cover;
+  background: url(https://i5.walmartimages.com/asr/203a79cf-aea3-4be3-98f0-a0b77137a872_1.c1ce11c469082d399b643d042df2b63c.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF) center repeat;
+  background-size: auto;
   background-attachment: fixed;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif, Courier New, Comic Sans,;
   font-size: 100%;
 }
 
+ 
 .wrapper {
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
   padding-bottom: 40px;
 }
 
@@ -25,22 +28,25 @@ body {
 }
 
 h1, h2 {
-  font-family: 'Gabriela', serif;
-  color: #fff;
+  font-family: 'Comic Sans MS', serif;
+  color:Blue;
+   
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 5.5em;
   margin-bottom: 0;
 }
 
 h2 {
   font-size: 1.5em;
+  font-style: oblique;
   margin-top: .5em;
 }
 
 h3 {
-  font-family: 'Gabriela', serif;
+  font-family: 'Wingdings';
+  color: Green;
   font-size: 1.5em;
   margin-top: .5em;
 }
@@ -52,11 +58,13 @@ img {
 }
 
 p {
+  font-family: 'Wingdings';
   font-size: 1em;
+  color: Green;
 }
 
 a {
-  color: black;
+  color: Blue;
   text-decoration: none;
 }
 
@@ -83,4 +91,34 @@ a:hover {
   .wrapper {
     width: 95%;
   }
+  .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: -50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+  
+  
+  
+  
 }
